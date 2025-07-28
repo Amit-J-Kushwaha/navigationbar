@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <title>Global Affairs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css?v=2">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
 
 
   <style>
-  * {
+    * {
       box-sizing: border-box;
       margin-left: 1px;
       padding-left: 1px;
@@ -101,6 +100,50 @@ body {
     left: 16px;
     top: 14px;
 }
+button {
+  margin-left: 5px;
+}
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 16px;
+      }
+
+      .logo {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .nav-links,
+      .actions {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        border-top: 1px solid #eee;
+      }
+
+      .nav-links.active,
+      .actions.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 24px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .actions {
+        padding: 0 24px;
+      }
+    }  
   </style>
 </head>
 <body>
@@ -127,10 +170,6 @@ body {
       <button class="btn subscribe"><a href="https://youtube.com/@globalaffairs.inofficial?si=vkSLSKlKPQiLADGQ">Subscribe youtube</a></button>
     </div>
   </nav>
-
-
-
-    
 
   <script >
 
