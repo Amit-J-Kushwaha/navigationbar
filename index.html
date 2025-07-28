@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Affairs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+  <style>
+  * {
+      box-sizing: border-box;
+      margin-left: 1px;
+      padding-left: 1px;
+      margin-right: 1px;
+      padding-right: 1px ;
+    }
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  flex: 1;
+  text-align: left;
+}
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex: 2;
+  justify-content: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+}
+.nav-links a:hover {
+  border-bottom: 2px solid #000;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  justify-content: flex-end;
+}
+.btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.login {
+  background: transparent;
+  color: #111;
+  border: 1px solid #ccc;
+}
+.login:hover {
+  border-color: #000;
+}
+.subscribe {
+  background-color: #000;
+  color: #fff;
+}
+.subscribe:hover {
+  background-color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="logo">GlobalAffairs.in</div>
+
+    <div class="nav-links" id="navLinks">
+      
+       <a href="globalaffairs.in">Home</a>
+      <a href="politics.html">Politics</a>
+      <a href="Economics.html">Economics</a>
+      <a href="Trade.html">Trade</a>
+      <a href="science.html">Science</a>
+      <a href="tech.html">Tech</a>
+      <a href="climate.html">Climate</a>
+      <a href="culture.html">Culture</a>
+    </div>
+
+    <div class="actions" id="navActions">
+      <button class="btn login"><a href="https://www.instagram.com/globalaffairs.in?igsh=MXhmejhudTZrcHJ5bA==">follow</a></button>
+      <button class="btn subscribe"><a href="https://youtube.com/@globalaffairs.inofficial?si=vkSLSKlKPQiLADGQ">Subscribe youtube</a></button>
+    </div>
+  </nav>
+
+
+
+    
+
+  <script >
+
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+      document.getElementById("navActions").classList.toggle("active");
+    }
+
+  </script>
+  <script src="articles.js?v=2"></script>
+    <link rel="stylesheet" href="worldmap.css">
+
+
+</body>
+</html>
